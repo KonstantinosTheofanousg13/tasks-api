@@ -19,7 +19,7 @@ export class TasksService {
     return task;
   }
 
-  create(createTaskDto : CreateTaskDto): Task {
+  create(createTaskDto: CreateTaskDto): Task {
     const task: Task = {
       id: randomUUID(),
       title: createTaskDto.title,
